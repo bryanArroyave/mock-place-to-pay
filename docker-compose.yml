@@ -1,0 +1,6 @@
+services:
+  mock-place-to-pay:
+    build: .
+    ports:
+      - "8090:8080"
+    command: --verbose

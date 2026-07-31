@@ -1,0 +1,26 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPath": "/rest/gateway/process",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.instrument.card[?(@.number == '4000000000000002')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": {
+        "status": "REJECTED",
+        "reason": "05",
+        "message": "Rechazada por banco"
+      },
+      "internalReference": 99002
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

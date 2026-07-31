@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/rest/gateway/otp/generate"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": {
+        "status": "OK",
+        "reason": "",
+        "message": "OTP generado correctamente"
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

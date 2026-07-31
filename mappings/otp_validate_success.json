@@ -1,0 +1,27 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPath": "/rest/gateway/otp/validate",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.instrument.card[?(@.otp == '123456')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": {
+        "status": "OK",
+        "reason": "00",
+        "message": "OTP validado correctamente"
+      },
+      "validated": true,
+      "signature": "MOCK_SIGNATURE_XYZ"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

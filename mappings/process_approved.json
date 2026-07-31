@@ -1,0 +1,22 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "POST",
+    "urlPath": "/rest/gateway/process"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": {
+        "status": "APPROVED",
+        "reason": "00",
+        "message": "Aprobada"
+      },
+      "internalReference": 99001,
+      "authorization": "MOCK_AUTH_001"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

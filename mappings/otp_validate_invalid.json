@@ -1,0 +1,22 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "POST",
+    "urlPath": "/rest/gateway/otp/validate"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": {
+        "status": "OK",
+        "reason": "OT01",
+        "message": "OTP incorrecto"
+      },
+      "validated": false,
+      "signature": ""
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
