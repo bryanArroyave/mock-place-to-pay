@@ -5,7 +5,7 @@
     "urlPath": "/rest/gateway/otp/validate",
     "bodyPatterns": [
       {
-        "matchesJsonPath": "$.instrument.card[?(@.otp == '123456')]"
+        "matchesJsonPath": "$.instrument[?(@.otp == '123456')]"
       }
     ]
   },
